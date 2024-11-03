@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #3a5d99;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#example img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #3a5d99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #314d84;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a5d99;
+    color: white;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+.fade-in-section {
+    opacity: 0; /* 初始透明 */
+}
+
+.zoomed {
+    transform: scale(1.2); /* 放大效果 */
+    border: 3px solid #314d84; /* 加上邊框 */
+    transition: transform 0.3s, border 0.3s; /* 過渡效果 */
+}
+/* Example CSS for a fixed navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* 側邊欄樣式 */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* 預設隱藏在左側 */
+    background-color: #333;
+    color: white;
+    overflow-x: hidden;
+    transition: left 0.3s ease; /* 添加過渡效果 */
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+#menuButton {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+/* 回到頂部按鈕 */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px;
+    display: none;
+    background-color: #3a5d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #314d84;
+}
+

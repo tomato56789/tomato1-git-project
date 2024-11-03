@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生物複製</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <body>
+        <!-- 隱藏式側邊欄 -->
+        <div id="sidebar" class="sidebar">
+            <a href="#introduction">介紹</a>
+            <a href="#dolly">桃莉羊</a>
+            <a href="#ferret">黑足鼬</a>
+            <a href="#monkey">靈長類</a>
+        </div>
+    
+        <!-- 側邊欄開啟按鈕 -->
+        <button id="menuButton" onclick="toggleSidebar()">≡</button>
+        
+        <!-- 回到頂部按鈕 -->
+        <button id="backToTop" style="display: none;">⬆ 回到頂部</button>
+    </body>
+    <button onclick="toggleSidebar()">≡</button>
+    
+    <header>
+        <h1>複製動物：了解科學原理</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>什麼是複製技術？</h2>
+        <p>複製是指產生基因上完全相同的個體的過程。它在自然界中發生在單細胞生物中，也可以通過人工技術來實現，是利用生物技術由無性生殖產生與原個體有完全相同基因組之後代的過程</p>
+        <div class="center">
+            <button id="toggleIntro">顯示/隱藏介紹</button>
+        </div>
+        <a href="https://zh.wikipedia.org/wiki/%E5%85%8B%E9%9A%86" id="learnMoreBtn">了解更多</a>
+    </section>
+
+    <section id="example">
+        <h2>桃莉羊</h2>
+        <p>1996 年出生，世界上第一隻體細胞複製動物──桃莉羊誕生了。
+            她的誕生開啟了複製研究的大門，英國的羅斯林研究所取出一頭母羊的乳腺細胞核，
+            將它移植到事先摘除了細胞核的受精卵中，利用化學方法刺激受精卵發育後，
+            再放入另一頭母羊的子宮，使其發育成小羊，成功產下了桃莉。</p>
+        <img src="images/dolly.jpg" alt="多莉羊" id="dollyImage">
+        <div class="center">
+            <button id="toggleDollyImage">顯示/隱藏圖片</button>
+        </div>
+    </section>
+
+    <section id="example">
+        <h2>黑足鼬</h2>
+        <p>這隻黑足鼬是北美史上第一隻在基因複製技術下誕生的瀕危動物。牠的基因來自一隻名叫維拉（Willa）的「前輩」
+            ，維拉的細胞在1988年被冷凍保存，隔了30多年後終於重回世界。<</p>
+        <img src="images/00.jpg" alt="黑足鼬" id="ferretImage">
+        <div class="center">
+            <button id="toggleFerretImage">顯示/隱藏圖片</button>
+        </div>
+    </section>
+
+    <section id="example">
+        <h2>第一隻靈長類</h2>
+        <p>1996年複製羊桃莉的誕生是生物科技史上重大的一次事件，
+            而後來科學家更複製出了貓、狗、牛等其他的哺乳動物，卻始終沒有像這次一樣成功地複製出靈長類動物，
+            第一隻猴子「中中」於 2017 年 11 月 27 日誕生，10 天後另外一隻複製猴子「華華」也順利出生了，他們是科學家第一次複製出的靈長類動物。
+        </p>
+        <img src="images/monkey.jpg" alt="靈長類" id="monkeyImage">
+        <div class="center">
+            <button id="toggleMonkeyImage">顯示/隱藏圖片</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 生物複製</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
